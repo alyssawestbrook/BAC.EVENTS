@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Events</title>
+</head>
+<body>
+  <h1>Internal Events (starter)</h1>
+  <ul>
+    {% for ev in internal_events %}
+      <li>{{ ev[1] }} - {{ ev[2] }} - {{ ev[3] }}</li>
+    {% else %}
+      <li>No internal events.</li>
+    {% endfor %}
+  </ul>
+
+  <h1>External Events (scraped)</h1>
+  <ul>
+    {% for ev in external_events %}
+      <li>
+        <strong>{{ ev[1] }}</strong> — {{ ev[2] }} {{ ev[3] }} — {{ ev[4] }}<br/>
+        <em>Source:</em> {{ ev[6] }} {% if ev[7] %}- <a href="{{ ev[7] }}" target="_blank">link</a>{% endif %}<br/>
+        {{ ev[5] }}
+      </li>
+    {% else %}
+      <li>No external events found.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

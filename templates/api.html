@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>API Data - Weather</title>
+</head>
+<body>
+  <h1>Weather / API Data</h1>
+  <table border="1">
+    <tr><th>ID</th><th>Event ID</th><th>Date</th><th>Provider</th><th>Temp Max</th><th>Temp Min</th><th>Weather</th></tr>
+    {% for r in api_data %}
+      <tr>
+        <td>{{ r[0] }}</td>
+        <td>{{ r[1] }}</td>
+        <td>{{ r[2] }}</td>
+        <td>{{ r[3] }}</td>
+        <td>{{ r[4] }}</td>
+        <td>{{ r[5] }}</td>
+        <td>{{ r[7] }}</td>
+      </tr>
+    {% else %}
+      <tr><td colspan="7">No API data available.</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
