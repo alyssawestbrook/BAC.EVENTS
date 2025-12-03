@@ -1,3 +1,5 @@
+# Dockerfile created using assistance from both chatGPT and GitHub Copilot (2025-12).
+# Some text automatically corrected by copilot (2025-12).
 # Use official lightweight Python image
 FROM python:3.10-slim
 

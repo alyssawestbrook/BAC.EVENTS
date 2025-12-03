@@ -1,6 +1,7 @@
 # db/seed_data.py
 # Initializes the DB and seeds basic sample data for testing.
-# Attribution: some helper structure suggested by ChatGPT (2025-12).
+# Structure suggesed by chatGPT (2025-12).
+# Some text automatically corrected by copilot (2025-12).
 
 import sqlite3
 import os

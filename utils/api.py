@@ -1,6 +1,7 @@
 # utils/api.py
 # Queries Open-Meteo for daily forecasts for each event date and stores results in api_data.
 # No API key required for Open-Meteo (https://open-meteo.com/).
+# Some text automatically corrected and added by copilot (2025-12).
 
 import requests
 import sqlite3

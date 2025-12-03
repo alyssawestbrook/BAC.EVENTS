@@ -2,8 +2,8 @@
 # Scraper for Belmont Abbey College academic calendar and Abbey Athletics calendar.
 # - Targets two URLs (academic calendar and athletics calendar).
 # - Parses text heuristically and inserts rows into external_events.
-#
-# Attribution: helper patterns and parsing provided with assistance from ChatGPT (2025-12).
+# Some text automatically corrected by copilot (2025-12).
+# Patterns and parsing suggested and corrected with assistance from ChatGPT (2025-12).
 
 import requests
 from bs4 import BeautifulSoup
