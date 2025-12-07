@@ -26,3 +26,4 @@ CREATE TABLE IF NOT EXISTS api_data (
     raw_json TEXT,       -- store raw JSON (string) for debugging
     FOREIGN KEY(event_id) REFERENCES external_events(id)
 );
+ALTER TABLE external_events ADD COLUMN weather_forecast TEXT;

@@ -25,7 +25,8 @@ def init_db():
         location TEXT,
         description TEXT,
         source TEXT,
-        url TEXT
+        url TEXT,
+        weather_forecast TEXT
     )
     ''')
 

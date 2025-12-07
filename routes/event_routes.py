@@ -19,7 +19,7 @@ def events():
     cursor = conn.cursor()
 
     # external events
-    cursor.execute('SELECT id, title, date, time, location, description, source, url FROM external_events ORDER BY date DESC, id DESC')
+    cursor.execute('SELECT id, title, date, time, location, description, source, url, weather_forecast FROM external_events ORDER BY date DESC, id DESC')
     external_events = cursor.fetchall()
 
     # internal events (starter content) - safe fallback

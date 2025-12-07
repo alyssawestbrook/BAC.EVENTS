@@ -21,6 +21,7 @@
         <strong>{{ ev[1] }}</strong> — {{ ev[2] }} {{ ev[3] }} — {{ ev[4] }}<br/>
         <em>Source:</em> {{ ev[6] }} {% if ev[7] %}- <a href="{{ ev[7] }}" target="_blank">link</a>{% endif %}<br/>
         {{ ev[5] }}
+        {% if ev[8] %}<br/><em>Weather:</em> {{ ev[8] }}{% endif %}
       </li>
     {% else %}
       <li>No external events found.</li>
